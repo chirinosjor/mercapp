@@ -21,14 +21,15 @@ function Header() {
           </a>
         </div>
         <div className="addressBar">
-          <img src={locationPin} alt="" />
+          <img src={locationPin} alt="locationPin" />
           <input className="addressInput" placeholder="Ingresa tu dirección" />
+          <a href="/" className="primary-button">Buscar</a>
         </div>
         <div className="login">
           <a href="/">Iniciar Sesión</a>
         </div>
         <div className="cart">
-          <a href="/" className="secondary-button">Carrito</a>
+          <a href="/" className="primary-button">Carrito</a>
         </div>
       </div>
     </div>

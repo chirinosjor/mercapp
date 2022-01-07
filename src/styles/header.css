@@ -6,10 +6,6 @@
 }
 
 .primary-button {
-  color: white;
-}
-
-.secondary-button {
   color: var(--dark-blue);
   border: 1px solid var(--dark-blue);
   padding: 10px 20px;
@@ -18,7 +14,7 @@
   text-decoration: none;
 }
 
-.secondary-button:hover {
+.primary-button:hover {
   background-color: var(--turquoise);
   color: white;
 }
