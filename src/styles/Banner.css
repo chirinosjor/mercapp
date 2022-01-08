@@ -1,0 +1,9 @@
+.bannerContainer {
+  width: 100%;
+}
+.banner {
+  width: 100%;
+  min-width: 400px;
+  background-size: cover;
+  background-position: center;
+}
