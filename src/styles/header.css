@@ -22,28 +22,77 @@
 .header {
   background-color: white;
   height: 70px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px 0 20px;
   border-bottom: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media (min-width: 765px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    border-bottom: 2px solid black;
+  } 
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+  align-items: center;
+}
+
+@media (min-width: 765px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;
+  }
 }
 
 .logo img {
-  height: 150px;
-  margin: 0;
+  height: 70px;
+  width: 70px;
+}
+
+@media (min-width: 765px) {
+  .logo img {
+    height: 100px;
+    width: 100px;
+    margin: 0;
+  }
 }
 
 .dispatchMethods {
-  display: flex;
-  justify-content: space-between;
+  display: none;
 }
 
-.dispatchMethods p {
-  margin-left: 40px;
+@media (min-width: 765px) {
+  .dispatchMethods {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    margin: 0px 10px;
+  }
+}
+
+.dispatchMethods a {
   color: var(--dark-blue);
   font-weight: bold;
-  padding: 5px;
+  text-decoration: none;
+  width: 50px;
+}
+
+@media (min-width: 765px) {
+  .dispatchMethods a {
+    padding: 0px 20px;
+    margin: 0px 10px;
+  }
 }
 
 .dispatchMethods p:hover {
@@ -53,13 +102,19 @@
 }
 
 .addressBar {
-  background-color: var(--light-gray);
-  height: 50px;
-  flex: 1;
-  border-radius: 50px;
-  max-width: 300px;
   display: flex;
-  align-items: center;
+}
+
+@media (min-width: 765px) {
+  .addressBar {
+    background-color: var(--light-gray);
+    border-radius: 50px;
+    flex: 1;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    margin: 0px 10px;
+  }  
 }
 
 .addressBar img {
@@ -67,24 +122,73 @@
   margin: 10px;
 }
 
+@media (min-width: 765px) {
+  .addressBar img {
+    height: 20px;
+    margin: 10px;
+  }
+}
+
 .addressInput {
   background-color: transparent;
   border: none;
-  width: 100%;
+  width: 200px;
   outline: none;
   color: var(--dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 765px) {
+  .addressInput {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    outline: none;
+    color: var(--dark-blue);
+  }
 }
 
 .login a {
-  margin-left: 40px;
-  color: var(--dark-blue);
-  font-weight: bold;
-  padding: 5px;
-  text-decoration: none;
+  display: none;
 }
 
-.login a:hover {
+@media (min-width: 765px) {
+  .login a {
+    padding: 10px 20px;
+    margin: 0px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--dark-blue);
+    display: block;
+  }
+}
+
+.login p {
+  font-size: 15px;
+}
+
+@media (min-width: 765px) {
+  .login p {
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 15px;
+  }
+}
+
+.login p:hover {
   border-bottom: 2px solid black;
   color: var(--turquoise);
   cursor: pointer;
+}
+
+.cart {
+  display: none;
+}
+
+@media (min-width: 765px) {
+  .cart {
+    display: block;
+  }
 }

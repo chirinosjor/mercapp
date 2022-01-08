@@ -12,24 +12,26 @@ function Header() {
             <img src={logo} alt="mercapp-logo" />
           </a>
         </div>
-        <div className="dispatchMethods">
-          <a href="/">
-            <p>Delivery</p>
-          </a>
-          <a href="/">
-           <p>Retiro</p>
-          </a>
-        </div>
-        <div className="addressBar">
-          <img src={locationPin} alt="locationPin" />
-          <input className="addressInput" placeholder="Ingresa tu dirección" />
-          <a href="/" className="primary-button">Buscar</a>
-        </div>
-        <div className="login">
-          <a href="/">Iniciar Sesión</a>
-        </div>
-        <div className="cart">
-          <a href="/" className="primary-button">Carrito</a>
+        <div className="navbar">
+          <div className="dispatchMethods">
+            <a href="/">
+              <p>Delivery</p>
+            </a>
+            <a href="/">
+              <p>Retiro</p>
+            </a>
+          </div>
+          <div className="addressBar">
+            <img src={locationPin} alt="locationPin" />
+            <input className="addressInput" placeholder="Ingresa tu dirección" />
+            <a href="/" className="primary-button">Buscar</a>
+          </div>
+          <div className="login">
+            <a href="/"><p>Iniciar Sesión</p></a>
+          </div>
+          <div className="cart">
+            <a href="/" className="primary-button">Carrito</a>
+          </div>
         </div>
       </div>
     </div>
