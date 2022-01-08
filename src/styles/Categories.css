@@ -2,9 +2,16 @@
   height: 60px;
   display: flex;
   align-items: center;
-  -webkit-box-shadow:0px 5px 5px var(--dark-blue);
-  -moz-box-shadow:0px 5px 5px var(--dark-blue);
-  box-shadow:0px 5px 5px var(--dark-blue);
+  -webkit-box-shadow:0px 3px 3px var(--dark-blue);
+  -moz-box-shadow:0px 3px 3px var(--dark-blue);
+  box-shadow:0px 3px 3px var(--dark-blue);
+}
+
+@media (min-width: 765px) {
+  .categoriesContainer {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .categoriesContainer a {

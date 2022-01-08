@@ -1,5 +1,5 @@
 import React from 'react'
-import categories from '../styles/Categories.css'
+import '../styles/Categories.css'
 
 const Categories = () => {
   return (
