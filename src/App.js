@@ -1,5 +1,5 @@
 import './App.css';
-import Header from './components/Header.jsx'
+import Navbar from './components/Navbar.jsx'
 import Banner from './components/Banner.jsx'
 import Categories from './components/Categories.jsx'
 import Products from './components/Products.jsx'
@@ -7,7 +7,7 @@ import Products from './components/Products.jsx'
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Navbar />
       <Banner />
       <Categories />
       <Products />
