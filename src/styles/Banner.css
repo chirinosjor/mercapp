@@ -4,4 +4,13 @@
   min-width: 400px;
   background-size: cover;
   background-position: center;
+  -webkit-box-shadow:0px 5px 5px var(--dark-blue);
+  -moz-box-shadow:0px 5px 5px var(--dark-blue);
+  box-shadow:0px 5px 5px var(--dark-blue);
+}
+
+@media (max-width: 764px) {
+  .banner {
+    background-size: contain;
+  }
 }

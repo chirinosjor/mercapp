@@ -31,6 +31,21 @@
   margin: 20px;
 }
 
+.productName {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.productDescription {
+  color: var(--dark-blue);
+}
+
+.productPrice {
+  color: var(--turquoise);
+  font-weight: bold;
+  font-size: large;
+}
+
 .product img {
   height: 150px;
   width: 150px;
@@ -51,5 +66,5 @@
 .addToCartButton:hover {
   background-color: var(--turquoise);
   color: white;
-  color: var(--dark-blue);
+  cursor: pointer;
 }

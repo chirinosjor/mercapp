@@ -28,6 +28,12 @@
   justify-content:space-between;
 }
 
+@media (max-width: 764px) {
+  .navbar {
+    justify-content: flex-start;
+  }
+}
+
 .logo img {
   height: 80px;
   width: 80px;
@@ -52,6 +58,7 @@
 @media (max-width: 764px) {
   .searchBar {
     margin-right: 10px;
+    width: 200px;
   }
 }
 
