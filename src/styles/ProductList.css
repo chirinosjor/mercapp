@@ -2,8 +2,6 @@
   width: 100vw;
 }
 
-
-
 .products {
   display: grid;
   grid-template-columns: repeat(1, 400px);
@@ -19,6 +17,14 @@
     place-content: center;
   }
 }
+
+.productList {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  gap: 30px;
+  place-content: center;
+}
+
 .product {
   width: 400px;
   height: 170px;
@@ -31,6 +37,10 @@
   margin: 20px;
 }
 
+.productDetails {
+  padding: 10px;
+}
+
 .productName {
   font-weight: bold;
   font-size: 20px;
@@ -38,6 +48,7 @@
 
 .productDescription {
   color: var(--dark-blue);
+  font-size: 5px;
 }
 
 .productPrice {

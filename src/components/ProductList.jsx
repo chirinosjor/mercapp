@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import '../styles/ProductList.css'
 
 const ProductList = () => {
 
@@ -15,14 +16,20 @@ const ProductList = () => {
     setProducts(productList)
   }
 
-  return <div>
-    <ul>
-      {
-        products.map(item => (
-          <li key={item.id} >{item.brand}</li>
-        ))
-      }
-    </ul>
+  return <div className='productList'>
+    {products.map(item => (
+        <div className="product">
+          <div className="productDetails">
+            <h3 className="productName">{item.item}</h3>
+            <p className='productType'>{item.brand}</p>
+            <p className='productPrice'>{item.price}</p>
+            <button className='addToCartButton'>Añadir al carro</button>
+          </div>
+          <figure>
+            <img src={item.image} alt="productImage" />
+          </figure>
+        </div>
+    ))}
   </div>;
 };
 
