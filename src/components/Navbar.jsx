@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/Navbar.css'
 import logo from '../assets/logo.png'
 import searchIcon from '../assets/searchicon.png'
+import Products from './Products'
 
 function Header() {
   return (

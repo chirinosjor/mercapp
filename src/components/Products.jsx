@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/ProductList.css'
+import '../styles/Products.css'
 
-const ProductList = () => {
+function Products() {
+
+  const [count, setCount] = useState(0);
+
+  let incrementCount = () => {
+    setCount(count + 1);
+  };
 
   const [products, setProducts] = useState([])
 
@@ -17,20 +23,24 @@ const ProductList = () => {
   }
 
   return <div className='productList'>
+    <div class="count">
+        <h3>Count:</h3>
+        <h1>{count}</h1>
+    </div>
     {products.map(item => (
-        <div className="product">
+        <div className="product" key={item.id} >
           <div className="productDetails">
             <h3 className="productName">{item.item}</h3>
             <p className='productType'>{item.brand}</p>
             <p className='productPrice'>{item.price}</p>
-            <button className='addToCartButton'>Añadir al carro</button>
+            <button className='addToCartButton' onClick={incrementCount}>Añadir al carro</button>
           </div>
           <figure>
             <img src={item.image} alt="productImage" />
           </figure>
-        </div>
+        </div> 
     ))}
   </div>;
-};
+}
 
-export default ProductList;
+export default Products;
