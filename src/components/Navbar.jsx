@@ -13,11 +13,6 @@ function Header() {
             <img src={logo} alt="mercapp-logo" />
           </a>
         </div>
-        <div className="searchBar">
-            <img src={searchIcon} alt="searchIcon" />
-            <input className="searchInput" placeholder="Buscar un producto" />
-            <a href="/" className="primary-button">Buscar</a>
-          </div>
         <div className="navbarLinks">
           <div className="login">
             <a href="/">Iniciar Sesión</a>

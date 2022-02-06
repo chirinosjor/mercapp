@@ -46,43 +46,6 @@
   }
 }
 
-
-.searchBar {
-  display: flex;
-  width: 500px;
-  border: 1px solid var(--dark-blue);
-  justify-content: space-between;
-  border-radius: 50px;
-}
-
-@media (max-width: 764px) {
-  .searchBar {
-    margin-right: 10px;
-    width: 200px;
-  }
-}
-
-.searchBar img {
-  height: 20px;
-  margin: 10px;
-}
-
-.searchBar a {
-  justify-self: end;
-}
-
-.searchInput {
-  background-color: transparent;
-  border: none;
-  width: 300px;
-  outline: none;
-  color: var(--dark-blue);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex: 1;
-}
-
 .navbarLinks {
   display: flex;
   width: 250px;
