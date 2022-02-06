@@ -1,8 +1,6 @@
 import React from 'react'
 import '../styles/Navbar.css'
 import logo from '../assets/logo.png'
-import searchIcon from '../assets/searchicon.png'
-import Products from './Products'
 
 function Header() {
   return (
@@ -15,10 +13,10 @@ function Header() {
         </div>
         <div className="navbarLinks">
           <div className="login">
-            <a href="/">Iniciar Sesión</a>
+            <a href="/user">Iniciar Sesión</a>
           </div>
           <div className="cart">
-            <a href="/" className="primary-button">Carrito</a>
+            <a href="/checkout" className="primary-button">Carrito</a>
           </div>
         </div>
       </div>
